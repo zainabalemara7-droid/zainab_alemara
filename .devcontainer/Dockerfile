@@ -1,11 +1,12 @@
-# Use the Default Linux Universal image
+# Base image: Default Linux Universal
 FROM mcr.microsoft.com/devcontainers/universal:2
 
-# Install Vue CLI globally (frontend)
+# Install Vue.js CLI for the frontend
 RUN npm install -g @vue/cli
 
-# Install Flask via pip (backend)
+# Install Flask for the backend
 RUN pip install flask
 
-# Default working directory
+# Default working directory inside the container
 WORKDIR /workspace
+
