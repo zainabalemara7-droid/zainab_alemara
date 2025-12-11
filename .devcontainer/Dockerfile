@@ -1,17 +1,11 @@
-# Base image
-FROM mcr.microsoft.com/devcontainers/base:bookworm
+# Use the Default Linux Universal image
+FROM mcr.microsoft.com/devcontainers/universal:2
 
-# Install Node + npm for Vue.js
-RUN apt-get update && apt-get install -y nodejs npm
-
-# Install Python + pip for Flask
-RUN apt-get install -y python3 python3-pip
-
-# Install Vue CLI globally
+# Install Vue CLI globally (frontend)
 RUN npm install -g @vue/cli
 
-# Install Flask
-RUN pip3 install flask
+# Install Flask via pip (backend)
+RUN pip install flask
 
 # Default working directory
 WORKDIR /workspace
