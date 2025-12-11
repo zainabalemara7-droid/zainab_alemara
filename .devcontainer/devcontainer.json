@@ -1,6 +1,6 @@
 {
   "name": "default-linux",
-  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
-  "features": {},
+  "dockerFile": "Dockerfile",
+  "context": ".",
   "postCreateCommand": "echo 'Devcontainer ready!'"
 }
