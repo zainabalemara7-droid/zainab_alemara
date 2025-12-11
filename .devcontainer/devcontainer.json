@@ -1,0 +1,6 @@
+{
+  "name": "default-linux",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {},
+  "postCreateCommand": "echo 'Devcontainer ready!'"
+}
